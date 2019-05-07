@@ -103,6 +103,23 @@ TARGET_USES_QCOM_BSP := true
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    system \
+    vendor \
+    vbmeta
+
+ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
+AB_OTA_PARTITIONS += \
+    recovery \
+    product \
+    system_ext
+endif
+
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
 AUDIO_FEATURE_ENABLED_AUDIOSPHERE := true

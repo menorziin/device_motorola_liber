@@ -14,12 +14,6 @@
 # limitations under the License.
 #
 
-# AB Partitions
-AB_OTA_PARTITIONS += \
-    recovery \
-    product \
-    system_ext
-
 # Crypto
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.dm_default_key.options_format.version=2 \
