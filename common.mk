@@ -56,6 +56,11 @@ ifeq ($(filter %_foles %_parker,$(TARGET_PRODUCT)),)
 $(call inherit-product, device/motorola/sm6150-common/common_dynamic.mk)
 endif
 
+PRODUCT_PACKAGES += \
+    e2fsck_ramdisk \
+    tune2fs_ramdisk \
+    resize2fs_ramdisk
+
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
