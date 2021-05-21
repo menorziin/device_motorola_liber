@@ -41,6 +41,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     FrameworksResLiber \
+    SettingsProviderResLiber \
     SettingsResLiber \
     SystemUIResLiber
 
