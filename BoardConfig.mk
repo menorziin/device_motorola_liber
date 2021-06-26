@@ -21,6 +21,11 @@ DEVICE_PATH := device/motorola/liber
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# Hals
+TARGET_QCOM_AUDIO_VARIANT := caf-sm8150
+TARGET_QCOM_MEDIA_VARIANT := caf-sm8150
+TARGET_QCOM_DISPLAY_VARIANT := caf-sm8150
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
