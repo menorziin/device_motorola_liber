@@ -39,11 +39,15 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
-# Build info
-BUILD_FINGERPRINT := "motorola/liber_retail/liber:10/QPIS30.73-33-6/fffd8e:user/release-keys"
+# Build fingerprint
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys
+BUILD_DESCRIPTION := redfin-user 11 RQ3A.210705.001/7380771 release-keys
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=liber_retail \
-    PRIVATE_BUILD_DESC="liber_retail-user 10 QPIS30.73-33-6 fffd8e release-keys"
+    PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
