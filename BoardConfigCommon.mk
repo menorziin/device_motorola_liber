@@ -177,6 +177,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
+TARGET_POWERHAL_BOOST_EXT := $(VENDOR_PATH)/power/boost-ext.cpp
 
 # Properties
 TARGET_PRODUCT_PROP += $(VENDOR_PATH)/product.prop
