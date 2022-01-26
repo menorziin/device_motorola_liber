@@ -173,8 +173,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.disable_ubwc=0
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    debug.sf.enable_hwc_vds=1
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_hwc_vds=0
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
