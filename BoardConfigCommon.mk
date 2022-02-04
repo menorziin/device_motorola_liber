@@ -177,6 +177,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
+# Properties
+TARGET_PRODUCT_PROP += $(VENDOR_PATH)/product.prop
+
 # Media
 TARGET_DISABLED_UBWC := true
 
