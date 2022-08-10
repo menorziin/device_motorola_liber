@@ -4,7 +4,7 @@
     "target_path": "kernel/motorola/sm6150"
   },
   {
-    "repository": "android_hardware_motorola",
-    "target_path": "hardware/motorola"
+    "repository": "android_packages_apps_MotoActions",
+    "target_path": "packages/apps/MotoActions"
   }
 ]
