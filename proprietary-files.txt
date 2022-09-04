@@ -551,12 +551,16 @@ vendor/lib64/libperfioctl.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libperfioctl.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
+vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib/vendor.qti.memory.pasrmanager@1.1.so
 
 # Perf (learningmodule)
 vendor/etc/lm/AdaptLaunchFeature.xml
