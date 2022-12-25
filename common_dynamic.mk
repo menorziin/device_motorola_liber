@@ -17,7 +17,8 @@
 # AB Partitions
 AB_OTA_PARTITIONS += \
     recovery \
-    product
+    product \
+    system_ext
 
 # Crypto
 PRODUCT_PROPERTY_OVERRIDES += \
