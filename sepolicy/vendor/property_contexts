@@ -51,3 +51,6 @@ vendor.hw.fingerprint.status                   u:object_r:moto_fingerprint_prop:
 
 # Motorola touch
 vendor.hw.touch.           u:object_r:moto_touch_prop:s0
+
+# Thermal engine
+vendor.thermal.config                   u:object_r:vendor_thermal_prop:s0

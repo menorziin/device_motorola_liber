@@ -52,3 +52,4 @@
 
 # Thermal
 /dev/mmi_sys_temp                                       u:object_r:thermal_device:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@2\.0-service\.mock                                                u:object_r:hal_thermal_default_exec:s0
