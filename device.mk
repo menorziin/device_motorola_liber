@@ -34,12 +34,12 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     FrameworksResCommon_Sys \
-    CarrierConfigResCommon_Sys \
     SystemUIResCommon_Sys \
     TelephonyResCommon_Sys \
     WifiResCommon_Sys \
 
 PRODUCT_PACKAGES += \
+    CarrierConfig \
     FrameworksResLiber \
     SettingsProviderResLiber \
     SettingsResLiber \
