@@ -191,10 +191,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
-    media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
-    debug.stagefright.ccodec=1 \
-    debug.stagefright.omx_default_rank=0 \
-    persist.vendor.media.recorder.bt709=true
+    debug.media.codec2=2 \
+    debug.stagefright.ccodec=4 \
+    debug.stagefright.omx_default_rank=512 \
+    debug.stagefright.c2inputsurface=-1 \
+    vendor.media.omx=0 \
+    vendor.qc2.venc.avgqp.enable=1
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     av.offload.enable=true \
@@ -204,6 +206,26 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 PRODUCT_PRODUCT_PROPERTIES += \
     media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# MM modules
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    media.aac_51_output_enabled=true \
+    media.stagefright.enable-player=true \
+    media.stagefright.enable-http=true \
+    media.stagefright.enable-aac=true \
+    media.stagefright.enable-qcp=true \
+    media.stagefright.enable-scan=true \
+    mmp.enable.3g2=true \
+    mm.enable.smoothstreaming=true \
+    mm.enable.qcom_parser=13631487 \
+    persist.mm.enable.prefetch=true \
+    vidc.enc.dcvs.extra-buff-count=2 \
+    vidc.enc.disable.pq=1
+
+# Media Transcoding
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.media.transcoding.codec_max_operating_rate_720P=240 \
+    debug.media.transcoding.codec_max_operating_rate_1080P=120
 
 # Memory optimizations
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
