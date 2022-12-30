@@ -1,6 +1,17 @@
 #
-# Properties for sm6150
+# Properties for liber
 #
+
+# Audio - ACDB
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.audio.calfile0=/vendor/etc/acdbdata/Bluetooth_cal.acdb \
+    persist.vendor.audio.calfile1=/vendor/etc/acdbdata/General_cal.acdb \
+    persist.vendor.audio.calfile2=/vendor/etc/acdbdata/Global_cal.acdb \
+    persist.vendor.audio.calfile3=/vendor/etc/acdbdata/Handset_cal.acdb \
+    persist.vendor.audio.calfile4=/vendor/etc/acdbdata/Hdmi_cal.acdb \
+    persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb \
+    persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Speaker_cal.acdb \
+    persist.vendor.audio.calfile7=/vendor/etc/acdbdata/Codec_cal.acdb
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -94,20 +105,43 @@ PRODUCT_ODM_PROPERTIES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.bt.a2dp.aac_whitelist=false \
     persist.bluetooth.a2dp_offload.disabled=true \
+    persist.vendor.bt.a2dp.aac_whitelist=false \
     persist.vendor.qcom.bluetooth.enable.splita2dp=true \
     persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
     persist.vendor.qcom.bluetooth.soc=cherokee \
     ro.bluetooth.a2dp_offload.supported=true \
     vendor.qcom.bluetooth.soc=cherokee
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    bluetooth.device.class_of_device=90,2,12 \
+    bluetooth.profile.asha.central.enabled?=true \
+    bluetooth.profile.a2dp.source.enabled?=true \
+    bluetooth.profile.avrcp.target.enabled?=true \
+    bluetooth.profile.bas.client.enabled?=true \
+    bluetooth.profile.gatt.enabled?=true \
+    bluetooth.profile.hfp.ag.enabled?=true \
+    bluetooth.profile.hid.device.enabled?=true \
+    bluetooth.profile.hid.host.enabled?=true \
+    bluetooth.profile.map.server.enabled?=true \
+    bluetooth.profile.opp.enabled?=true \
+    bluetooth.profile.pan.nap.enabled?=true \
+    bluetooth.profile.pan.panu.enabled?=true \
+    bluetooth.profile.pbap.server.enabled?=true \
+    bluetooth.profile.sap.server.enabled?=true
+
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.bluetooth.soc=cherokee
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.camera.expose.aux=1
+    persist.vendor.camera.expose.aux=1 \
+    persist.vendor.camera.physical.num=5
+
+# Chipset
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=QTI \
+    ro.soc.model=SM7150
 
 # CNE
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -120,7 +154,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Crypto
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.allow_encrypt_override=true \
-    ro.crypto.volume.filenames_mode=aes-256-cts
+    ro.crypto.volume.filenames_mode=aes-256-cts \
+    ro.crypto.dm_default_key.options_format.version=2 \
+    ro.crypto.volume.metadata.method=dm-default-key \
+    ro.crypto.volume.options=::v2
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -175,6 +212,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=0
+
+# HDR
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.qcom.hdr.config=/system/vendor/etc/hdr_tm_config.xml
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -236,10 +277,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Netflix
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.netflix.bsp_rev=Q6150-17263-1
-
-# NFC
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.nfc.port=I2C
 
 # OEM Unlock reporting
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -327,7 +364,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Sensor
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.vendor.sensors.enable.mag_filter=true
+    ro.vendor.sensors.mot_ltv=true \
+    persist.vendor.sensors.enable.mag_filter=true \
+    persist.vendor.sensors.hal_trigger_ssr=true \
+    persist.vendor.sensors.odl.adsp=true
 
 # Time
 PRODUCT_PROPERTY_OVERRIDES += \
