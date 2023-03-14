@@ -101,10 +101,6 @@ vendor/lib/btaudio_offload_if.so|0bfaf1275284b5fa013bc32c079e14ecdaf006b7
 vendor/lib/libbluetooth_audio_session_qti.so|7105df2154860061256d1f4e8cd73dbd3ea505ba
 vendor/lib/libbluetooth_audio_session_qti_2_1.so|82e2e0531896376d72cc867ead7b8d3a6ebea744
 
-# Bluetooth (aptX) - from sunfish TQ1A.221205.011
-system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
-system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-
 # Bluetooth - from hanoip S2RIS32.32-20-7-7
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so|643f80c571c2cda57acfc52f2bdd5472bcb4a58a
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|fc027f639c03566e1df916ed246a3dbc4b2483e7
