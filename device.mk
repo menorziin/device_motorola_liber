@@ -41,7 +41,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     ApertureOverlayLiber \
-    CertificationOverlay \
     FrameworksResLiber \
     SettingsProviderResLiber \
     SettingsResLiber \
