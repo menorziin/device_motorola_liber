@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Build properties from a GMS certified device -->
+    <string-array name="config_certifiedBuildProperties">
+        <item>PRODUCT:c01_ww</item>
+        <item>DEVICE:acer_c01</item>
+        <item>MANUFACTURER:Acer Inc.</item>
+        <item>BRAND:acer</item>
+        <item>MODEL:C01</item>
+        <item>FINGERPRINT:acer/c01_ww/acer_c01:7.1.1/NMF26F/1521514970:user/release-keys</item>
+        <item>VERSION.SECURITY_PATCH:2018-04-01</item>
+    </string-array>
+</resources>
