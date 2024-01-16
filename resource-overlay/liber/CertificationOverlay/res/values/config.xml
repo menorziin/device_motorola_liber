@@ -2,12 +2,12 @@
 <resources>
     <!-- Build properties from a GMS certified device -->
     <string-array name="config_certifiedBuildProperties">
-        <item>PRODUCT:c01_ww</item>
-        <item>DEVICE:acer_c01</item>
-        <item>MANUFACTURER:Acer Inc.</item>
-        <item>BRAND:acer</item>
-        <item>MODEL:C01</item>
-        <item>FINGERPRINT:acer/c01_ww/acer_c01:7.1.1/NMF26F/1521514970:user/release-keys</item>
-        <item>VERSION.SECURITY_PATCH:2018-04-01</item>
+        <item>PRODUCT:CatS60</item>
+        <item>DEVICE:CatS60</item>
+        <item>MANUFACTURER:BullitGroupLimited</item>
+        <item>BRAND:Cat</item>
+        <item>MODEL:S60</item>
+        <item>FINGERPRINT:Cat/CatS60/CatS60:6.0.1/MMB29M/LTE_D0201121.0_S60_0.031.02:user/release-keys</item>
+        <item>VERSION.SECURITY_PATCH:null</item>
     </string-array>
 </resources>
