@@ -226,22 +226,6 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
-    <name>vendor.lineage.livedisplay</name>
-    <version>2.0</version>
-    <interface>
-        <name>IAdaptiveBacklight</name>
-        <instance>default</instance>
-    </interface>
-    <interface>
-        <name>IPictureAdjustment</name>
-        <instance>default</instance>
-    </interface>
-    <interface>
-        <name>ISunlightEnhancement</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
     <name>vendor.lineage.trust</name>
     <version>1.0</version>
     <interface>

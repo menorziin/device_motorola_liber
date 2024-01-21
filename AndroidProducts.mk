@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_liber.mk
+    $(LOCAL_DIR)/arrow_liber.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_liber-eng \
-    lineage_liber-user \
-    lineage_liber-userdebug
+    arrow_liber-eng \
+    arrow_liber-user \
+    arrow_liber-userdebug

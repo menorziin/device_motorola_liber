@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from liber device
 $(call inherit-product, device/motorola/liber/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Arrow stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_liber
+PRODUCT_NAME := arrow_liber
 PRODUCT_DEVICE := liber
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola one fusion+
@@ -46,3 +46,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT="liber_retail"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+# Gapps
+ARROW_GAPPS := true
