@@ -851,7 +851,7 @@ vendor/lib64/libQTEEConnector_vendor.so|30e5fd8d4fff50083f44f6d0bd09f4bd287a8366
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|0f684ab4d6f4b76b248b1da6e747ff2454c68d8c
 
 # Radio - IMS (APK) - from patched source
--system_ext/priv-app/ims/ims.apk|d721258450109ee391e640727e99a0e8d34e8404
+-system_ext/priv-app/ims/ims.apk|e48ddd5a44c66db54cac7718f0030fc5e13d4b4a
 
 # Radio - IMS - from hanoip S2RI32.32-20-9-9-2
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|75e8a824d368cd4172985c884796381327d950da
